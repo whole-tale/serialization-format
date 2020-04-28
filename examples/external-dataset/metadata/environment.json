@@ -1,0 +1,23 @@
+{
+    "config": {
+        "buildpack": "RockerBuildPack",
+        "command": "/start.sh",
+        "environment": [
+            "CSP_HOSTS=https://dashboard.wholetale.org",
+            "PASSWORD=password"
+        ],
+        "memLimit": "2048m",
+        "port": 8787,
+        "targetMount": "/WholeTale/",
+        "urlPath": "",
+        "user": "rstudio"
+    },
+    "description": null,
+    "icon": "https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Ball.png",
+    "iframe": true,
+    "name": "RStudio",
+    "tags": [
+        "latest"
+    ],
+    "taleConfig": {}
+}

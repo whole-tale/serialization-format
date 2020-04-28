@@ -1,0 +1,1 @@
+https://cn-stage.test.dataone.org/cn/v2/resolve/urn:uuid:c15c72a5-6534-4250-a177-d9e1e0d3de41 37024 data/data/Methane and nitrous oxide fluxes as a function of the timing of goose grazing Yukon Kuskokwim Delta Alaska 2016/CH4_N20_data.csv

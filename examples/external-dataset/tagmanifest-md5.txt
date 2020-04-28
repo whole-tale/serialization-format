@@ -1,0 +1,9 @@
+3ef1c60dafae2b0e531e8cc8712e3867 README.md
+84658e2c2540e91578bb194d912f1829 run-local.sh
+9e5ad981e0d29adc278f6a294b8c2aca bagit.txt
+f3564079347ba16d28e15f8584d50981 bag-info.txt
+18bae3e755e6a406b454b73f4dd99112 fetch.txt
+08107e89be7a93d9d49718021d7f8a0b manifest-md5.txt
+529bac44fca9e39c8d52d808deee6593 manifest-sha256.txt
+25b7d29515e5726e907c669bf0ed0ab3 metadata/environment.json
+e56d79847d94c42e9203ed172fe6bcb2 metadata/manifest.json
