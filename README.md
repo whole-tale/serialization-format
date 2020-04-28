@@ -1,6 +1,6 @@
-# Whole Tale Export Format
+# Whole Tale Serialization Format
 
-Whole Tale has the ability to export Tales from the system to disk. Deciding which standard fit Whole Tale best warranted extended discussion about requirements, comparisons of existing standards, and mapping our internal representation of data into a standard's.
+Whole Tale has the ability to serialize Tales to disk. Deciding which standard fit Whole Tale best warranted extended discussion about requirements, comparisons of existing standards, and mapping our internal representation of data into a standard's.
 
 This document covers the Whole Tale 0.9 Tale Exporting Subsystem. It covers three sections
 
