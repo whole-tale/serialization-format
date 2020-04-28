@@ -637,9 +637,8 @@ The environment.json file contains non-standard metadata about the compute envir
 
 
 1. Turn schema:category into an array. Enables future work on the backend and UI for multuple categories.
-1. Turn our `Datasets` into a `schema:Dataset` or `schema:DataCatalouge`. Gets rid of our made up `Datasets` word.
+1. Turn our `Datasets` into a `schema:Dataset` or `schema:DataCatalouge`.
 1.  Pull in vocab for md5. I meant to do this a while back.
-1. schema:hasPart??
 1. "schema:" needed to prefix words in `Dataset` records. Note in the snipped below that they're missing.
 ```json=
 {
@@ -649,9 +648,8 @@ The environment.json file contains non-standard metadata about the compute envir
     "@id": "doi:10.5063/F1HM56Q3"
 }
 ```
-
-6. Move the export stream content type to the Exporter class
-7. Reconsider author & creatorship use of pav+foaf
+5. Move the export stream content type to the Exporter class
+6. Reconsider author & creatorship use of pav+foaf.
 
 
 
