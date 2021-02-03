@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://vocabularies.wholetale.org/wt/1.0/wt#>
+  a owl:Ontology ;
+  owl:versionIRI <https://vocabularies.wholetale.org/wt/1.0/wt#> ;
+  rdfs:comment "This document describes a language for describing Tale related objects and the relations between them."@en ;
+  rdfs:label "Whole Tale Ontology" ;
+  owl:versionInfo "Version 1.0" .
+
+<https://vocabularies.wholetale.org/wt/1.0/wt#usesDatasets>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/wt#Tale> ;
+  rdfs:range <https://schema.org/Dataset> ;
+  rdfs:comment "Relates a Tale with a set of schema.org datasets."@en ;
+  rdfs:label "usesDatasets"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/wt#Version>
+  a owl:Class ;
+  rdfs:subClassOf <https://schema.org/CreativeWork> ;
+  rdfs:comment "A class that represents a particular version of a Tale."@en ;
+  rdfs:label "Tale Version"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/wt#Tale>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/wf4ever/ro#ResearchObject>, <https://schema.org/CreativeWork> ;
+  rdfs:comment "A class that represents a Tale."@en ;
+  rdfs:label "Tale"@en .
