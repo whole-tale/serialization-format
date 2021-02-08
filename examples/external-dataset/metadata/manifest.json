@@ -8,7 +8,7 @@
             "DataCite": "http://datacite.org/schema/kernel-4"
         },
         {
-            "wt": "https://vocabularies.wholetale.org/wt/1.0/wt#"
+            "wt": "https://vocabularies.wholetale.org/wt/0.1/wt#"
         }
     ],
 
@@ -49,7 +49,7 @@
     ],
     "dct:hasVersion": {
         "@id":"https://data.wholetale.org/api/v1/folder/4d082326cc895d0f7434f931",
-        "@type": "wt:Version",
+        "@type": "wt:TaleVersion",
         "schema:name": "My first Version",
         "schema:dateModified": "2021-2-2",
         "schema:creator": {
