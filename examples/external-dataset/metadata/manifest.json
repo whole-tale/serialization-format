@@ -27,7 +27,7 @@
             "size": 37024,
             "bundledAs": {
                 "filename": "CH4_N20_data.csv",
-                "folder": "../data/data/Methane and nitrous oxide fluxes as a function of the timing of goose grazing Yukon Kuskokwim Delta Alaska 2016/"
+                "folder": "file://..%2Fdata%2Fdata%2FMethane%20and%20nitrous%20oxide%20fluxes%20as%20a%20function%20of%20the%20timing%20of%20goose%20grazing%20Yukon%20Kuskokwim%20Delta%20Alaska%202016%2F"
             },
             "wt:internalIdentifier": "6019bde75f71f4b22e04e421",
             "uri": "https://cn-stage.test.dataone.org/cn/v2/resolve/urn:uuid:c15c72a5-6534-4250-a177-d9e1e0d3de41"
@@ -37,7 +37,7 @@
             "size": 170,
             "schema:license": "CC-BY-4.0",
             "mimeType": "text/plain",
-            "uri": "../data/LICENSE"
+            "uri": "file://%22..%2Fdata%2FLICENSE"
         }
     ],
     "schema:author": [
