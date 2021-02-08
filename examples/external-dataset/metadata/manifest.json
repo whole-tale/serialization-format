@@ -19,7 +19,7 @@
     "schema:name": "Methane and nitrous oxide fluxes as a function of the timing of goose grazing, Yukon Kuskokwim Delta, Alaska, 2016",
     "schema:keywords": "science",
     "schema:image": "https://raw.githubusercontent.com/whole-tale/dashboard/master/public/images/demo-graph2.jpg",
-    "schema:identifier": "5e73a67ff88fdbec275c545e",
+    "wt:internalIdentifier": "5e73a67ff88fdbec275c545e",
     "createdOn": "2020-03-19 17:06:07.896000",
     "aggregates": [
         {
@@ -29,6 +29,7 @@
                 "filename": "CH4_N20_data.csv",
                 "folder": "../data/data/Methane and nitrous oxide fluxes as a function of the timing of goose grazing Yukon Kuskokwim Delta Alaska 2016/"
             },
+            "wt:internalIdentifier": "6019bde75f71f4b22e04e421",
             "uri": "https://cn-stage.test.dataone.org/cn/v2/resolve/urn:uuid:c15c72a5-6534-4250-a177-d9e1e0d3de41"
         },
         {
@@ -53,7 +54,7 @@
         "schema:name": "My first Version",
         "schema:dateModified": "2021-2-2",
         "schema:creator": {
-            "@id": "thelen@nceas.ucsb.edu",
+            "@id": "mailto:thelen@nceas.ucsb.edu",
             "@type": "schema:Person",
             "schema:givenName": "Thomas",
             "schema:familyName": "Thelen",
@@ -85,10 +86,10 @@
         }
     ],
     "createdBy": {
-        "schema:familyName": "T",
+        "schema:familyName": "Thelen",
         "schema:email": "tommythelen@gmail.com",
         "schema:givenName": "Thomas",
         "@type": "schema:Person",
-        "@id": "tommythelen@gmail.com"
+        "@id": "mailto:tommythelen@gmail.com"
     }
 }

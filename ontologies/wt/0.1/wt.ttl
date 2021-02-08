@@ -13,7 +13,14 @@
   rdfs:domain <https://vocabularies.wholetale.org/wt/0.1/wt#Tale> ;
   rdfs:range <https://schema.org/Dataset> ;
   rdfs:comment "Relates a Tale with a set of schema.org datasets."@en ;
-  rdfs:label "usesDatasets"@en .
+  rdfs:label "Uses Datasets"@en .
+
+<https://vocabularies.wholetale.org/wt/0.1/wt#internalIdentifier>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/0.1/wt#Tale>, <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+  rdfs:comment "An identifier used by the internal Whole Tale system for resources."@en ;
+  rdfs:label "Internal Identifier"@en .
 
 <https://vocabularies.wholetale.org/wt/0.1/wt#TaleVersion>
   a owl:Class ;
