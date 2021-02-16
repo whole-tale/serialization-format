@@ -1,4 +1,5 @@
 import rdflib
+import urllib.parse
 
 
 def load_manifest(manifest_path: str) -> rdflib.Graph:
@@ -112,6 +113,8 @@ def query_tale_properties():
 
 
 if __name__ == '__main__':
+    urllib.parse.uses_relative.append('arcp')
+    urllib.parse.uses_netloc.append('arcp')
     print("Parsing the Tale's Version Information....")
     query_version_information()
     print("\n\n\n")
