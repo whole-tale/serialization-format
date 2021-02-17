@@ -11,7 +11,7 @@ def load_manifest(manifest_path: str) -> rdflib.Graph:
     """
 
     graph:rdflib.Graph = rdflib.Graph().parse(source=manifest_path, format='json-ld')
-    graph.bind("wt", rdflib.Namespace("https://vocabularies.wholetale.org/wt/1.0/wt#"))
+    graph.bind("wt", rdflib.Namespace("https://vocabularies.wholetale.org/wt/1.0/"))
     return graph
 
 
@@ -24,7 +24,7 @@ def query_version_information(graph: rdflib.Graph):
 
     # Query that retrieves the version ID, name, and date last modified
     query = """
-    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/wt#> 
+    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/> 
     
     SELECT ?version_id ?version_name ?date_modified
     WHERE {
@@ -42,7 +42,7 @@ def query_version_information(graph: rdflib.Graph):
 
     # Get the version author's information
     query = """
-    PREFIX sdtl: <https://vocabularies.wholetale.org/wt/1.0/wt#>
+    PREFIX sdtl: <https://vocabularies.wholetale.org/wt/1.0/>
     SELECT DISTINCT ?creator_id ?given_name ?family_name ?email
     WHERE {
         ?version_id rdf:type wt:TaleVersion .
@@ -70,7 +70,7 @@ def query_tale_properties(graph: rdflib.Graph):
 
     # Query that retrieves various root level properties of the Tale
     query = """
-    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/wt#>
+    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/>
     SELECT ?tale_id ?tale_description ?tale_schema_version ?tale_name ?tale_keywords
             ?internal_id
     WHERE {
@@ -94,7 +94,7 @@ def query_tale_properties(graph: rdflib.Graph):
 
     # Query that retrieves information about the Tale creator
     query = """
-    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/wt#>
+    PREFIX wt: <https://vocabularies.wholetale.org/wt/1.0/>
     SELECT ?creator_id ?family_name ?given_name ?email
     WHERE {
         ?tale_id rdf:type wt:Tale .
@@ -117,8 +117,8 @@ if __name__ == '__main__':
     urllib.parse.uses_relative.append('arcp')
     urllib.parse.uses_netloc.append('arcp')
     # g = load_manifest("./external-dataset/metadata/manifest.json")
-    g = load_manifest("./extra-metadata/metadata/manifest.json")
-    # g = load_manifest("./local-data/metadata/manifest.json")
+    # g = load_manifest("./extra-metadata/metadata/manifest.json")
+    g = load_manifest("./local-data/metadata/manifest.json")
     print(g.serialize(format='turtle').decode('utf-8'))
 
     print("Parsing the Tale's Version Information....")

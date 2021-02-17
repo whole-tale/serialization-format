@@ -8,7 +8,7 @@
             "datacite": "https://schema.datacite.org/meta/kernel-4.3/#"
         },
         {
-            "wt": "https://vocabularies.wholetale.org/wt/1.0/wt#"
+            "wt": "https://vocabularies.wholetale.org/wt/1.0/"
         },
         {
             "@base": "arcp://uid,6010722be1b8489f740af149/data/"
