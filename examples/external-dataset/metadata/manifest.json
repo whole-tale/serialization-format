@@ -51,7 +51,7 @@
         }
     ],
     "dct:hasVersion": {
-        "@id": "https://data.wholetale.org/api/v1/tale/6010722be1b8489f740af149",
+        "@id": "https://data.wholetale.org/api/v1/folder/5010722be1b8489f740af643",
         "@type": "wt:TaleVersion",
         "schema:creator": {
             "@id": "mailto:thelen@nceas.ucsb.edu",
