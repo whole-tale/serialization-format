@@ -11,19 +11,35 @@
             "wt": "https://vocabularies.wholetale.org/wt/1.0/wt#"
         },
         {
-            "@base": "arcp://uid,6010722be1b8489f740af149/data/"
+            "@base": "arcp://uid,602d7a21b80f3feb48a9e6b6/data/"
         }
     ],
-    "@id": "https://data.wholetale.org/api/v1/tale/6010722be1b8489f740af149",
+    "@id": "https://data.wholetale.org/api/v1/tale/602d7a21b80f3feb48a9e6b6",
     "@type": "wt:Tale",
     "aggregates": [
         {
-            "bundledAs": {
-                "folder": "./data/Ecosystem%20scale%20implication%20of%20soil%20carbon%20dioxide%20%28CO2%29%20concentration%20dynamicsduring%20soil%20freezing%20in%20Alaskan%20Arctic%20tundra%20ecosystems%202005-2007/"
-            },
-            "uri": "doi:10.18739/A22V2CB3N",
-            "wt:identifier": "6019bde75f71f4b22e04e421",
-            "wt:size": 4832637
+            "uri": "./workspace/install.R",
+            "wt:md5": "0f05d97ee3e0eace1e6b4de553498b1d",
+            "wt:mimeType": "text/plain",
+            "wt:size": 231
+        },
+        {
+            "uri": "./workspace/apt.txt",
+            "wt:md5": "63bdd97bc9050d57604955b0054378b5",
+            "wt:mimeType": "text/plain",
+            "wt:size": 197
+        },
+        {
+            "uri": "./workspace/postBuild",
+            "wt:md5": "83f8dce94d7ea94dd83248b15dcdfe28",
+            "wt:mimeType": "text/x-shellscript",
+            "wt:size": 36
+        },
+        {
+            "uri": "./workspace/images/bnll.jpg",
+            "wt:md5": "5305ef203de0a152f6caa8b31045888d",
+            "wt:mimeType": "image/jpeg",
+            "wt:size": 41001
         },
         {
             "schema:license": "CC-BY-4.0",
@@ -40,18 +56,10 @@
         "schema:familyName": "T",
         "schema:givenName": "Thomas"
     },
-    "createdOn": "2021-01-26 19:48:59.508000",
-    "datacite:relatedIdentifiers": [
-        {
-            "datacite:relatedIdentifier": {
-                "@id": "doi:10.18739/A22V2CB3N",
-                "datacite:relatedIdentifierType": "datacite:DOI",
-                "datacite:relationType": "datacite:Cites"
-            }
-        }
-    ],
+    "createdOn": "2021-02-17 20:18:41.699000",
+    "datacite:relatedIdentifiers": [],
     "dct:hasVersion": {
-        "@id": "https://data.wholetale.org/api/v1/tale/6010722be1b8489f740af149",
+        "@id": "https://data.wholetale.org/api/v1/tale/602d7a21b80f3feb48a9e6b6",
         "@type": "wt:TaleVersion",
         "schema:creator": {
             "@id": "mailto:thelen@nceas.ucsb.edu",
@@ -60,8 +68,8 @@
             "schema:familyName": "T",
             "schema:givenName": "Thomas"
         },
-        "schema:dateModified": "2021-01-26T19:48:59.508000+00:00",
-        "schema:name": "t2"
+        "schema:dateModified": "2021-02-17T20:18:41.699000+00:00",
+        "schema:name": "Test Local Data"
     },
     "schema:author": [],
     "schema:description": "### Provide a description for your Tale",
@@ -73,16 +81,9 @@
         }
     ],
     "schema:image": "https://raw.githubusercontent.com/whole-tale/dashboard/master/public/images/demo-graph2.jpg",
-    "schema:keywords": "science22",
-    "schema:name": "t2",
+    "schema:keywords": "science",
+    "schema:name": "Test Local Data",
     "schema:schemaVersion": 9,
-    "wt:identifier": "6010722be1b8489f740af149",
-    "wt:usesDataset": [
-        {
-            "@id": "doi:10.18739/A22V2CB3N",
-            "@type": "schema:Dataset",
-            "schema:identifier": "doi:10.18739/A22V2CB3N",
-            "schema:name": "Ecosystem scale implication of soil carbon dioxide (CO2) concentration dynamicsduring soil freezing in Alaskan Arctic tundra ecosystems 2005-2007"
-        }
-    ]
+    "wt:identifier": "602d7a21b80f3feb48a9e6b6",
+    "wt:usesDataset": []
 }

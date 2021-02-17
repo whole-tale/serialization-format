@@ -1,55 +1,55 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#>
+<https://vocabularies.wholetale.org/wt/1.0/wt#>
   a owl:Ontology ;
-  owl:versionIRI <https://vocabularies.wholetale.org/wt/0.1/wt#> ;
+  owl:versionIRI <https://vocabularies.wholetale.org/wt/1.0/wt#> ;
   rdfs:comment "This document describes a language for describing Tale related objects and the relations between them."@en ;
   rdfs:label "Whole Tale Ontology"@en ;
-  owl:versionInfo "Version 0.1" .
+  owl:versionInfo "Version 1.0" .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#identifier>
+<https://vocabularies.wholetale.org/wt/1.0/wt#identifier>
   a owl:ObjectProperty ;
-  rdfs:domain <https://vocabularies.wholetale.org/wt/0.1/wt#Tale>, <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/wt#Tale>, <http://www.openarchives.org/ore/terms/AggregatedResource> ;
   rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
   rdfs:comment "An identifier used by the internal Whole Tale system for resources."@en ;
-  rdfs:label "Internal Identifier"@en .
+  rdfs:label "Identifier"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#md5>
+<https://vocabularies.wholetale.org/wt/1.0/wt#md5>
   a owl:ObjectProperty ;
   rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
   rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
   rdfs:comment "The MD5 checksum of a file."@en ;
   rdfs:label "MD5 Checksum"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#mimetype>
+<https://vocabularies.wholetale.org/wt/1.0/wt#mimetype>
   a owl:ObjectProperty ;
   rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
   rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
   rdfs:comment "The mimetype of a file."@en ;
   rdfs:label "Mimetype"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#size>
+<https://vocabularies.wholetale.org/wt/1.0/wt#size>
   a owl:ObjectProperty ;
   rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
   rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
   rdfs:comment "The size of a file in bytes."@en ;
   rdfs:label "Size"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#usesDataset>
+<https://vocabularies.wholetale.org/wt/1.0/wt#usesDataset>
   a owl:ObjectProperty ;
-  rdfs:domain <https://vocabularies.wholetale.org/wt/0.1/wt#Tale> ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/wt#Tale> ;
   rdfs:range <https://schema.org/Dataset> ;
   rdfs:comment "Relates a Tale with a set of schema.org datasets."@en ;
-  rdfs:label "Uses Datasets"@en .
+  rdfs:label "Uses Dataset"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#TaleVersion>
+<https://vocabularies.wholetale.org/wt/1.0/wt#TaleVersion>
   a owl:Class ;
   rdfs:subClassOf <https://schema.org/CreativeWork> ;
   rdfs:comment "A class that represents a particular version of a Tale."@en ;
   rdfs:label "Tale Version"@en .
 
-<https://vocabularies.wholetale.org/wt/0.1/wt#Tale>
+<https://vocabularies.wholetale.org/wt/1.0/wt#Tale>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/wf4ever/ro#ResearchObject>, <https://schema.org/CreativeWork> ;
   rdfs:comment "A class that represents a Tale."@en ;
