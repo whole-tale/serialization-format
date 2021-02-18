@@ -18,14 +18,14 @@
 <https://vocabularies.wholetale.org/wt/1.0/md5>
   a owl:ObjectProperty ;
   rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
-  rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
   rdfs:comment "The MD5 checksum of a file."@en ;
   rdfs:label "MD5 Checksum"@en .
 
 <https://vocabularies.wholetale.org/wt/1.0/mimetype>
   a owl:ObjectProperty ;
   rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
-  rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
   rdfs:comment "The mimetype of a file."@en ;
   rdfs:label "Mimetype"@en .
 
