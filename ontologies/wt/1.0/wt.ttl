@@ -40,17 +40,17 @@
   a owl:ObjectProperty ;
   rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/Tale> ;
   rdfs:range <https://schema.org/Dataset> ;
-  rdfs:comment "Relates a Tale with a set of schema.org datasets."@en ;
+  rdfs:comment "Relates a Tale with external data."@en ;
   rdfs:label "Uses Dataset"@en .
 
 <https://vocabularies.wholetale.org/wt/1.0/TaleVersion>
   a owl:Class ;
   rdfs:subClassOf <https://schema.org/CreativeWork> ;
-  rdfs:comment "A class that represents a particular version of a Tale."@en ;
+  rdfs:comment "A snapshot of a Tale's state that may be attributed to users that are not first authors of the Tale."@en ;
   rdfs:label "Tale Version"@en .
 
 <https://vocabularies.wholetale.org/wt/1.0/Tale>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/wf4ever/ro#ResearchObject>, <https://schema.org/CreativeWork> ;
-  rdfs:comment "A class that represents a Tale."@en ;
+  rdfs:comment "A collection of data, code, and metadata that together define and describe a computational experiment."@en ;
   rdfs:label "Tale"@en .
