@@ -1,0 +1,56 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://vocabularies.wholetale.org/wt/1.0/>
+  a owl:Ontology ;
+  owl:versionIRI <https://vocabularies.wholetale.org/wt/1.0/> ;
+  rdfs:comment "This document describes a language for describing Tale related objects and the relations between them."@en ;
+  rdfs:label "Whole Tale Ontology"@en ;
+  owl:versionInfo "Version 1.0" .
+
+<https://vocabularies.wholetale.org/wt/1.0/identifier>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/Tale>, <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+  rdfs:comment "An identifier used by the internal Whole Tale system for resources."@en ;
+  rdfs:label "Identifier"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/md5>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+  rdfs:comment "The MD5 checksum of a file."@en ;
+  rdfs:label "MD5 Checksum"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/mimetype>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:range <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+  rdfs:comment "The mimetype of a file."@en ;
+  rdfs:label "Mimetype"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/size>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+  rdfs:comment "The size of a file in bytes."@en ;
+  rdfs:label "Size"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/usesDataset>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://vocabularies.wholetale.org/wt/1.0/Tale> ;
+  rdfs:range <https://schema.org/Dataset> ;
+  rdfs:comment "Relates a Tale with external data."@en ;
+  rdfs:label "Uses Dataset"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/TaleVersion>
+  a owl:Class ;
+  rdfs:subClassOf <https://schema.org/CreativeWork> ;
+  rdfs:comment "A snapshot of a Tale's state that may be attributed to users that are not first authors of the Tale."@en ;
+  rdfs:label "Tale Version"@en .
+
+<https://vocabularies.wholetale.org/wt/1.0/Tale>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/wf4ever/ro#ResearchObject>, <https://schema.org/CreativeWork> ;
+  rdfs:comment "A collection of data, code, and metadata that together define and describe a computational experiment."@en ;
+  rdfs:label "Tale"@en .
