@@ -1,4 +1,4 @@
-# Tale: "t2" in BDBag Format
+# Tale: "Test Local Data" in BDBag Format
 
 ### Provide a description for your Tale
 

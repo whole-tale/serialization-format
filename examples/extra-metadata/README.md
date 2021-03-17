@@ -1,6 +1,6 @@
-# Tale: "t2" in BDBag Format
+# Tale: "Published Tale" in BDBag Format
 
-### Provide a description for your Tale
+A super top secret Tale
 
 # Running locally
 

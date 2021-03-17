@@ -1,0 +1,102 @@
+{
+    "@context": [
+        "https://w3id.org/bundle/context",
+        {
+            "schema": "http://schema.org/"
+        },
+        {
+            "datacite": "https://schema.datacite.org/meta/kernel-4.3/#"
+        },
+        {
+            "wt": "https://vocabularies.wholetale.org/wt/1.0/"
+        },
+        {
+            "@base": "arcp://uid,602d7a21b80f3feb48a9e6b6/data/"
+        }
+    ],
+    "@id": "https://data.wholetale.org/api/v1/tale/602d7a21b80f3feb48a9e6b6",
+    "@type": "wt:Tale",
+    "aggregates": [
+        {
+            "uri": "./workspace/install.R",
+            "wt:md5": "0f05d97ee3e0eace1e6b4de553498b1d",
+            "wt:mimeType": "text/plain",
+            "wt:size": 231
+        },
+        {
+            "uri": "./workspace/apt.txt",
+            "wt:md5": "63bdd97bc9050d57604955b0054378b5",
+            "wt:mimeType": "text/plain",
+            "wt:size": 197
+        },
+        {
+            "uri": "./workspace/postBuild",
+            "wt:md5": "83f8dce94d7ea94dd83248b15dcdfe28",
+            "wt:mimeType": "text/x-shellscript",
+            "wt:size": 36
+        },
+        {
+            "uri": "./workspace/images/bnll.jpg",
+            "wt:md5": "5305ef203de0a152f6caa8b31045888d",
+            "wt:mimeType": "image/jpeg",
+            "wt:size": 41001
+        },
+        {
+            "schema:license": "CC-BY-4.0",
+            "uri": "./LICENSE",
+            "wt:md5": "81faaedac351f28092bd845a48c6d0a5",
+            "wt:mimeType": "text/plain",
+            "wt:size": 170
+        }
+    ],
+    "createdBy": {
+        "@id": "mailto:thelen@nceas.ucsb.edu",
+        "@type": "schema:Person",
+        "schema:email": "thelen@nceas.ucsb.edu",
+        "schema:familyName": "T",
+        "schema:givenName": "Thomas"
+    },
+    "createdOn": "2021-02-17 20:18:41.699000",
+    "datacite:relatedIdentifiers": [],
+    "dct:hasVersion": {
+        "@id": "https://data.wholetale.org/api/v1/folder/123d7a21b80f3feb48a9e678",
+        "@type": "wt:TaleVersion",
+        "schema:creator": {
+            "@id": "mailto:thelen@nceas.ucsb.edu",
+            "@type": "schema:Person",
+            "schema:email": "thelen@nceas.ucsb.edu",
+            "schema:familyName": "T",
+            "schema:givenName": "Thomas"
+        },
+        "schema:dateModified": "2021-02-17T20:18:41.699000+00:00",
+        "schema:name": "Published Tale"
+    },
+    "schema:author": [
+        {
+            "@id": "https://orcid.org/0000-0002-1756-2128",
+            "@type": "schema:Person",
+            "schema:familyName": "Thelen",
+            "schema:givenName": "Thomas"
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-1756-2129",
+            "@type": "schema:Person",
+            "schema:familyName": "Schmidt",
+            "schema:givenName": "Hans"
+        }
+    ],
+    "schema:description": "A super top secret Tale",
+    "schema:hasPart": [
+        {
+            "@id": "https://github.com/whole-tale/repo2docker_wholetale",
+            "@type": "schema:SoftwareApplication",
+            "schema:softwareVersion": "wholetale/repo2docker_wholetale:latest"
+        }
+    ],
+    "schema:image": "https://raw.githubusercontent.com/whole-tale/dashboard/master/public/images/demo-graph2.jpg",
+    "schema:keywords": "science",
+    "schema:name": "Published Tale",
+    "schema:schemaVersion": 9,
+    "wt:identifier": "602d7a21b80f3feb48a9e6b6",
+    "wt:usesDataset": []
+}

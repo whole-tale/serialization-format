@@ -13,7 +13,7 @@ docker run  \
     --target-repo-dir=/WholeTale/workspace \
     --user-id=1000 --user-name=jovyan \
     --no-clean --no-run --debug \
-    --image-name wholetale/tale_6010722be1b8489f740af149 \
+    --image-name wholetale/tale_602d7a21b80f3feb48a9e6b6 \
     /WholeTale/workspace
 
 docker run --rm \
@@ -28,5 +28,5 @@ echo "========================================================================"
 docker run -p 8888:8888 \
   -v "`pwd`/data/data:/WholeTale/data" \
   -v "`pwd`/data/workspace:/WholeTale/workspace" \
-  wholetale/tale_6010722be1b8489f740af149 jupyter notebook --no-browser --port 8888 --ip=0.0.0.0 --NotebookApp.token=wholetale --NotebookApp.base_url=/ --NotebookApp.port_retries=0
+  wholetale/tale_602d7a21b80f3feb48a9e6b6 jupyter notebook --no-browser --port 8888 --ip=0.0.0.0 --NotebookApp.token=wholetale --NotebookApp.base_url=/ --NotebookApp.port_retries=0
 
