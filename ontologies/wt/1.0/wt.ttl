@@ -4,7 +4,7 @@
 <https://vocabularies.wholetale.org/wt/1.0/>
   a owl:Ontology ;
   owl:versionIRI <https://vocabularies.wholetale.org/wt/1.0/> ;
-  rdfs:comment "This document describes a language for describing Tale related objects and the relations between them."@en ;
+  rdfs:comment "This document defines a language for describing Tale related objects and the relations between them."@en ;
   rdfs:label "Whole Tale Ontology"@en ;
   owl:versionInfo "Version 1.0" .
 
