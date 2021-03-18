@@ -24,7 +24,7 @@ jobs:
           ontogram $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl
           mv $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl.txt.png $GITHUB_WORKSPACE/docs/wt/1.0/wt.png
           sed -i 's/<div.*Pictures say.*<\/div>/<img src="wt.png"\/>/g' docs/wt/1.0/index.html 
-          rdfpipe -o xml $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl > $GITHUB_WORKSPACE/docs//wt/1.0/wt.xml
+          rdfpipe -o xml $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl > $GITHUB_WORKSPACE/docs//wt/1.0/wt.owl
           cp $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl $GITHUB_WORKSPACE/docs/wt/1.0/
     - name: Commit HTML
       run: |
