@@ -1,0 +1,24 @@
+{
+    "_accessLevel": -1,
+    "_id": "600a153560dccaa1edeb43e8",
+    "_modelType": "image",
+    "config": {
+        "buildpack": "PythonBuildPack",
+        "command": "jupyter notebook --no-browser --port {port} --ip=0.0.0.0 --NotebookApp.token={token} --NotebookApp.base_url=/{base_path} --NotebookApp.port_retries=0",
+        "memLimit": "2048m",
+        "port": 8888,
+        "targetMount": "/home/jovyan/work",
+        "urlPath": "?token={token}",
+        "user": "jovyan"
+    },
+    "created": "2021-01-21T23:58:45.140000+00:00",
+    "creatorId": "600a152b457b68ad65f47bd1",
+    "description": null,
+    "icon": "https://raw.githubusercontent.com/whole-tale/jupyter-base/master/squarelogo-greytext-orangebody-greymoons.png",
+    "iframe": true,
+    "name": "Jupyter Notebook",
+    "parentId": null,
+    "public": true,
+    "tags": null,
+    "updated": "2021-01-21T23:58:45.140000+00:00"
+}
