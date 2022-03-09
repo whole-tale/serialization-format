@@ -16,7 +16,7 @@ jobs:
       with:
         python-version: '3.x'
     - name: Install pyLODE
-      run: python -m pip install pyLODE ontogram
+      run: python -m pip install pyLODE==2.13.2 ontogram
     - name: Run pyLODE
       run: | 
           mkdir -p $GITHUB_WORKSPACE/docs/wt/1.0
@@ -26,10 +26,18 @@ jobs:
           sed -i 's/<div.*Pictures say.*<\/div>/<img src="wt.png"\/>/g' docs/wt/1.0/index.html 
           rdfpipe -o xml $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl > $GITHUB_WORKSPACE/docs//wt/1.0/wt.owl
           cp $GITHUB_WORKSPACE/ontologies/wt/1.0/wt.ttl $GITHUB_WORKSPACE/docs/wt/1.0/
+          mkdir -p $GITHUB_WORKSPACE/docs/wt/1.1
+          pylode -i $GITHUB_WORKSPACE/ontologies/wt/1.1/wt.ttl -o $GITHUB_WORKSPACE/docs/wt/1.1/index.html
+          ontogram $GITHUB_WORKSPACE/ontologies/wt/1.1/wt.ttl
+          mv $GITHUB_WORKSPACE/ontologies/wt/1.1/wt.ttl.txt.png $GITHUB_WORKSPACE/docs/wt/1.1/wt.png
+          sed -i 's/<div.*Pictures say.*<\/div>/<img src="wt.png"\/>/g' docs/wt/1.1/index.html 
+          rdfpipe -o xml $GITHUB_WORKSPACE/ontologies/wt/1.1/wt.ttl > $GITHUB_WORKSPACE/docs//wt/1.1/wt.owl
+          cp $GITHUB_WORKSPACE/ontologies/wt/1.1/wt.ttl $GITHUB_WORKSPACE/docs/wt/1.1/
     - name: Commit HTML
       run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add docs/wt/1.0
+          git add docs/wt/1.1
           git commit -m 'Updated vocabulary'
           git push

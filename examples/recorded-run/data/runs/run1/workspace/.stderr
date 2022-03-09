@@ -1,0 +1,3 @@
++ mkdir output
++ echo entrypoint1
++ echo out1
