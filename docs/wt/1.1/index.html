@@ -192,7 +192,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <script type="application/ld+json">
       [
   {
-    "@id": "https://vocabularies.wholetale.org/wt/1.0/",
+    "@id": "https://vocabularies.wholetale.org/wt/1.1/",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -220,11 +220,11 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>https://vocabularies.wholetale.org/wt/1.0/</code></dd>
+        <dd><code>https://vocabularies.wholetale.org/wt/1.1/</code></dd>
         <dt>Version Information</dt>
-        <dd>Version 1.0</dd>
+        <dd>Version 1.1</dd>
         <dt>Version URI</dt>
-        <dd><a href="https://vocabularies.wholetale.org/wt/1.0/"></a></dd>
+        <dd><a href="https://vocabularies.wholetale.org/wt/1.1/"></a></dd>
         <dt>Ontology RDF</dt>
         <dd><a href="wt.ttl">RDF (turtle)</a></dd>
     </dl>
@@ -252,9 +252,41 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+      <li><a href="#RecordedRun">Recorded Run</a></li>
       <li><a href="#Tale">Tale</a></li>
       <li><a href="#TaleVersion">Tale Version</a></li>
     </ul>
+    <div class="entity class" id="RecordedRun">
+        <h3>
+          Recorded Run<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#RecordedRun" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/RecordedRun</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Execution of a version of a Tale's workflow determined by an entrypoint script.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://schema.org/CreativeWork">sdo:CreativeWork</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#HasRecordedRuns">Has Recorded Runs</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsPartofRecordedRun">Is Part of Recorded Run</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Tale">
         <h3>
           Tale<sup title="class" class="sup-c">c</sup>
@@ -263,7 +295,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/Tale</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/Tale</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -274,15 +306,16 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://purl.org/wf4ever/ro#ResearchObject">ro:ResearchObject</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="https://schema.org/CreativeWork">sdo:CreativeWork</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/wf4ever/ro#ResearchObject">ro:ResearchObject</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#Identifier">Identifier</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#UsesDataset">Uses Dataset</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasRecordedRuns">Has Recorded Runs</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Identifier">Identifier</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -295,7 +328,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/TaleVersion</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/TaleVersion</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -315,12 +348,44 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#HasRecordedRuns">Has Recorded Runs</a></li>
         <li><a href="#Identifier">Identifier</a></li>
+        <li><a href="#IsPartofRecordedRun">Is Part of Recorded Run</a></li>
         <li><a href="#MD5Checksum">MD5 Checksum</a></li>
         <li><a href="#Mimetype">Mimetype</a></li>
+        <li><a href="#RunStatus">Run Status</a></li>
         <li><a href="#Size">Size</a></li>
         <li><a href="#UsesDataset">Uses Dataset</a></li>
     </ul>
+    <div class="entity property" id="HasRecordedRuns">
+        <h3>Has Recorded Runs<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasRecordedRuns" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/hasRecordedRuns</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Relates a Tale with its Recorded Run.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Tale">Tale</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://vocabularies.wholetale.org/wt/1.1/RecordedRun">RecordedRun</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="Identifier">
         <h3>Identifier<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#Identifier" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -328,7 +393,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/identifier</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/identifier</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -339,14 +404,43 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Tale">Tale</a><sup class="sup-c" title="class">c</sup>
                     <a href="http://www.openarchives.org/ore/terms/AggregatedResource">ore:AggregatedResource</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Tale">Tale</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
                     <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="IsPartofRecordedRun">
+        <h3>Is Part of Recorded Run<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#IsPartofRecordedRun" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/isPartOfRun</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Relates an aggregated resource with a Recorded Run.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.openarchives.org/ore/terms/AggregatedResource">ore:AggregatedResource</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://vocabularies.wholetale.org/wt/1.1/RecordedRun">RecordedRun</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -358,7 +452,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/md5</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/md5</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -387,7 +481,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/mimetype</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/mimetype</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -409,6 +503,35 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity property" id="RunStatus">
+        <h3>Run Status<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#RunStatus" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/runStatus</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The status a recorded run.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://vocabularies.wholetale.org/wt/1.1/RecordedRun">http://vocabularies.wholetale.org/wt/1.1/RecordedRun</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="Size">
         <h3>Size<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#Size" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
@@ -416,7 +539,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/size</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/size</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -445,7 +568,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://vocabularies.wholetale.org/wt/1.0/usesDataset</code></td>
+                <td><code>https://vocabularies.wholetale.org/wt/1.1/usesDataset</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -474,7 +597,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>default (:)</dt>
-        <dd><code>https://vocabularies.wholetale.org/wt/1.0/</code></dd>
+        <dd><code>https://vocabularies.wholetale.org/wt/1.1/</code></dd>
         <dt>brick</dt>
         <dd><code>https://brickschema.org/schema/Brick#</code></dd>
         <dt>csvw</dt>
